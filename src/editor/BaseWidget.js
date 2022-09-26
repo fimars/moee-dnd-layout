@@ -9,25 +9,6 @@ const BaseWidgetWrapper = styled.div`
   padding: 4px;
 `;
 
-/**
- * easily the most important method in the algorithm
- *
- * @param r1 space1
- * @param r2 space 2
- * @returns boolean if it is colliding
- */
-function areOverlapping(r1, r2) {
-  return !(
-    r1.right < r2.left ||
-    r1.left > r2.right ||
-    r1.bottom < r2.top ||
-    r1.top > r2.bottom
-  );
-}
-
-function areContain({ x, y }, r2) {
-  return x >= r2.left && x <= r2.right && y >= r2.top && y <= r2.bottom;
-}
 
 const DropableWrapper = ({ denis, onMouseOver, wid, onDrop, type }) => {
   const ref = useRef(null);

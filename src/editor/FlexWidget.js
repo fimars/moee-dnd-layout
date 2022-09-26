@@ -27,7 +27,7 @@ export const FlexWidget = ({ nodeData, isDropable = true }) => {
   };
   const moveNode = (wid, currentId) => {
     const { node, index } = findNode(wid);
-    const { _, index: cIndex } = findNode(currentId);
+    const { index: cIndex } = findNode(currentId);
     if (cIndex === -1) return partData;
     return update(partData, {
       children: {
@@ -39,7 +39,7 @@ export const FlexWidget = ({ nodeData, isDropable = true }) => {
     });
   };
   const insertNode = (wid, type) => {
-    const { _node, index } = findNode(wid);
+    const { index } = findNode(wid);
     return update(partData, {
       children: {
         $splice: [

@@ -62,7 +62,7 @@ const ImagePreview = styled.img`
 `;
 
 export const CustomDragLayer = () => {
-  const { itemType, item, isDragging, initialOffset, currentOffset, ...inst } =
+  const { itemType, item, isDragging, initialOffset, currentOffset } =
     useDragLayer((monitor) => ({
       item: monitor.getItem(),
       itemType: monitor.getItemType(),

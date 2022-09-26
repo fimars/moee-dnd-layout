@@ -1,6 +1,5 @@
 import "./App.css";
 import { TouchBackend } from "react-dnd-touch-backend";
-import { HTML5Backend } from 'react-dnd-html5-backend'
 import { DndProvider } from "react-dnd";
 import { Editor } from "./editor/Editor";
 import "7.css/dist/7.css";

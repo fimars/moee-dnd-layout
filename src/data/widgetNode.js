@@ -1,4 +1,3 @@
-import { Component } from "react";
 import { CatWidget } from "../editor/CatWidget";
 import { CookieWidget } from "../editor/CookieWidget";
 import { FlexWidget } from "../editor/FlexWidget";
