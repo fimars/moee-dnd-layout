@@ -36,8 +36,8 @@ function getItemStyles(initialOffset, currentOffset, isSnapToGrid) {
   }
   let { x, y } = currentOffset;
   if (isSnapToGrid) {
-    x -= initialOffset.x;
-    y -= initialOffset.y;
+    x -= initialOffset.x + 30;
+    y -= initialOffset.y + 30;
     [x, y] = snapToGrid(x, y);
     x += initialOffset.x;
     y += initialOffset.y;
@@ -67,7 +67,7 @@ export const CustomDragLayer = () => {
       item: monitor.getItem(),
       itemType: monitor.getItemType(),
       initialOffset: monitor.getInitialSourceClientOffset(),
-      currentOffset: monitor.getSourceClientOffset(),
+      currentOffset: monitor.getClientOffset(),
       isDragging: monitor.isDragging(),
     }));
   function renderItem() {

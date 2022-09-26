@@ -3,7 +3,7 @@
 ![preview](/public/preview.png)
 
 
-Demo: [venerable-paprenjak-bff2aa.netlify.app](venerable-paprenjak-bff2aa.netlify.app)
+Demo: [venerable-paprenjak-bff2aa.netlify.app](https://venerable-paprenjak-bff2aa.netlify.app)
 
 # Getting Started with Create React App
 
