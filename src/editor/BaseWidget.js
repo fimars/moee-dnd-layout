@@ -6,6 +6,7 @@ import { GlobalXY } from "../components/GlobalXY";
 const BaseWidgetWrapper = styled.div`
   border: 2px solid;
   box-sizing: border-box;
+  margin: 4px;
   padding: 4px;
 `;
 
